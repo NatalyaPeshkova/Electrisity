@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Black+Ops+One&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    
+    /* переменные для цвета */
+    --yellow-color: #fcca03;
+    --white-color: #ffff;
+    --grey-color: #3A4357;
+    --light-yellow-color: #fade40;
+    --orange-color: #F4A125;
+
+}
+
+* {
+    outline: 1px solid #f00 !important;
+}
+
+*, header, main, .wrapper, footer, div, img {
+    border: 1px green solid;
+}
+
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--white-color);
+}  
+
+body {
+    background-color: #070707;
+    font-family: "Anton", sans-serif;
+}
+
+.header-wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #222939;
+    height: 180px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.yellow-block {
+    background: linear-gradient(241deg, rgba(255,207,14,1) 0%, rgba(254,222,12,1) 96%);
+    clip-path: polygon(0 23%, 100% 24%, 99% 53%, 2% 83%);
+    height: 300px;
+    max-width: 1200px;
+    position: absolute;
+    top: -50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 50px 30px;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 1;
+		transform: translateY(-45px);
+	}
+
+	24% {
+		opacity: 1;
+	}
+
+	40% {
+		animation-timing-function: ease-in;
+		transform: translateY(-24px);
+	}
+
+	65% {
+		animation-timing-function: ease-in;
+		transform: translateY(-12px);
+	}
+
+	82% {
+		animation-timing-function: ease-in;
+		transform: translateY(-6px);
+	}
+
+	93% {
+		animation-timing-function: ease-in;
+		transform: translateY(-4px);
+	}
+
+	25%,
+	55%,
+	75%,
+	87% {
+		animation-timing-function: ease-out;
+		transform: translateY(0px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+.logo {
+    width: 100px;
+}
+
+.main-title {
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 200%;
+    margin-bottom: 35px;
+    margin-left: 50px;
+    align-self: center;
+}
+
+.wrapper {
+    background: linear-gradient(360deg, rgba(0,0,0,1) 0%, rgba(56,64,84,1) 70%);
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 70px;
+}
+
+.contacts {
+    margin: 0 auto;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 80px;
+}
+
+.contacts-title {
+    font-family: "Black Ops One", system-ui;
+    font-weight: 900;
+    font-style: normal;
+    text-transform: uppercase;
+    line-height: 1.5;
+    letter-spacing: 2px;  
+    color: var(--white-color);
+    font-size: 30px;
+    margin: 20px 20px 30px 20px;
+}
+
+.contacts-title span {
+    font-weight: 400;
+    text-transform: lowercase;
+}
+
+.contacts-btn {
+    padding: 50px;
+    background-color: var(--yellow-color);
+    border-radius: 30px;
+    color: var(--white-color);
+    font-family: "Anton", sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    transition-duration: .5s;
+    box-shadow: 16px 16px 8px 0px rgba(246, 249, 250, 0.2);
+    margin-left: 20px;
+}
+
+.contacts-btn:hover {
+    transform: scale(1.1);
+    background: linear-gradient(241deg, rgba(255,207,14,1) 0%, rgba(254,222,12,0.9781162464985994) 58%);
+}
+
+.contacts-item {
+    position: relative;
+}
+
+.back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    transition-duration: .3s;
+    border-radius: 5%;
+    border:10px solid #fcca03;
+    animation: myAnim3 10s ease 0s 1 normal forwards;
+    color: var(--white-color);
+    font-weight: 400;
+    line-height: 150%;
+    font-size: 30px;
+    padding: 50px;
+}
+
+@keyframes myAnim3 {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 0;
+		transform: scale(0);
+	}
+
+	38% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: scale(1);
+	}
+
+	55% {
+		animation-timing-function: ease-in;
+		transform: scale(0.7);
+	}
+
+	72% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+
+	81% {
+		animation-timing-function: ease-in;
+		transform: scale(0.84);
+	}
+
+	89% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+
+	95% {
+		animation-timing-function: ease-in;
+		transform: scale(0.95);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+}
+
+.contacts-img {
+    width: 300px;
+    height: 300px;
+    transition-duration: .3s;
+    border-radius: 5%;
+    border:10px solid #fcca03;
+    animation: myAnim2 10s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim2 {
+	0% {
+		opacity: 1;
+		transform: scale(1);
+	}
+
+	100% {
+		opacity: 0;
+		transform: scale(0.6);
+	}
+}
+
+.info {
+    height: auto;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px;
+    display: flex;
+    clip-path: polygon(4% 4%, 96% 0, 100% 100%, 0% 100%);
+    background-color: var(--yellow-color);
+}
+
+.info_700px {
+    display: none;
+}
+
+.info-items {
+    display: flex;
+    margin: 0 auto;
+    max-width: 900px;
+    column-gap: 20px
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light-yellow-color);
+    color: var(--black-color);
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 5%;
+    /* max-width: 280px; */
+    width: 250px;
+}
+
+.info-item_img {
+    max-width: 200px;
+    /* height: 200px; */
+    margin-top: 30px;
+    transition-duration: .5s;
+    border-radius: 5%;
+}
+
+h3 {
+    font-family: "Black Ops One", system-ui;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+.hover-effect-btn {
+    opacity: 0;
+    transition-duration: 0.5s;
+    position: relative;
+    top: -100px;
+    width: 200px;
+    height: 70px;
+    background-color: var(--orange-color);
+    color: var(--black-color);
+    font-family: "Black Ops One", system-ui;
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: lowercase;
+    box-shadow: 16px 16px 8px 0px rgba(246, 249, 250, 0.2);
+    border-radius: 10px;
+
+}
+
+.info-item:hover h3{
+    transform: scale(1.02);
+    font-size: 110%;
+    color:#070707;
+}
+
+.info-item:hover .info-item_img {
+    transform: scale(1.1);
+    opacity: .7;
+}
+
+.info-item:hover .hover-effect-btn{
+    opacity: 1;
+}
+
+.info a {
+    height: 1px;
+}
+
+.details {
+    height: auto;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: minmax(200px, 600px) auto;
+    grid-template-rows: auto;
+    justify-content: space-between;
+    gap: 20px;
+    background: linear-gradient(180deg, rgba(56,64,84,1) 13%, rgba(99,117,150,1) 72%);
+    color: var(--white-color);
+    text-transform: uppercase;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    
+}
+
+.details-item {
+    max-width: 600px;
+    height: auto;
+    background-color: var(--grey-color);
+    padding: 30px;
+}
+
+.details-item h3 {
+    margin-bottom: 20px;
+}
+
+.details-contacts {
+    max-width: 300px;
+    height: auto;
+    background-color: var(--grey-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--white-color);
+    font-size: var(--fz-20);
+    padding: 30px;
+}
+
+.details-contacts a {
+    font-size: var(--fz-14);
+    color: var(--white-color);
+    font-weight: normal;
+}
+
+
+.details-contacts img {
+    filter: invert(98%) sepia(100%) saturate(0%) hue-rotate(312deg) brightness(102%) contrast(101%);
+    width: 50px;
+    height: 50px;
+    transition-duration: .5s;
+}
+
+.details-contacts img:hover {
+transform: scale(1.1);
+}
+
+
+.details-contacts h3 {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li:before {
+    content: '✓';
+    color: var(--yellow-color);
+}
+
+.footer-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #222939;
+}
+
+footer {
+    margin: 0 auto;
+    max-width: 1000px;
+    max-height: 500px;
+
+}
+
+.grey-block {
+    margin-top: 10px;
+    max-height: 200px;
+    max-width: 1000px;
+    display: flex;
+    align-items: flex-end;
+    justify-content:end;
+    color: var(--white-color);
+}
+
+.copyright {
+    margin-right: 10px;
+}
